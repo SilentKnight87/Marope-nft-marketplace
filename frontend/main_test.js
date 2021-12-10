@@ -1,11 +1,18 @@
 /* Moralis init code */
-const serverUrl = "";
-const appId = "";
+const serverUrl = "https://masdi5ewxhhw.usemoralis.com:2053/server";
+const appId = "1bZMC0KVQeXFRu5HojPeKBA5GJ57psWKX3MJ3Kkj";
 Moralis.start({ serverUrl, appId });
 /* Authentication code */
+
+initUser = async () => {
+  if (await Moralis.User.current()){
+    hideElement
+  }
+}
 console.log('It got clicked')
 async function login() {
   let user = Moralis.User.current();
+  console.log('This is user',user)
   if (!user) {
     
     user = await Moralis.authenticate({ signingMessage: "Log in using Moralis" })
