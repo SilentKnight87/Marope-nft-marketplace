@@ -1,6 +1,7 @@
 /* Moralis init code */
 const serverUrl = "https://masdi5ewxhhw.usemoralis.com:2053/server";
 const appId = "1bZMC0KVQeXFRu5HojPeKBA5GJ57psWKX3MJ3Kkj";
+const TOKEN_CONTRACT_ADDRESS = "0x4a2c549180cF41A5bCd73779De12E5FC9218A298"
 Moralis.start({ serverUrl, appId });
 /* Authentication code */
 
