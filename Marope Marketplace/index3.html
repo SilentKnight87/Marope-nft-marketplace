@@ -1,0 +1,1368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+	<link rel="stylesheet" href="css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="css/select2.min.css">
+	<link rel="stylesheet" href="css/main.css">
+
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<!-- Favicons -->
+	<link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+	<link rel="icon" type="image/png" href="icon/favicon-32x32.png" sizes="32x32">
+	<link rel="apple-touch-icon" href="icon/apple-touch-icon.png" sizes="180x180">
+	<link rel="manifest" href="icon/site.webmanifest">
+
+	<meta name="description" content="Marope NFT Marketplace">
+	<meta name="keywords" content="Marope Marketplace NFT">
+	<meta name="author" content="Marope Inc">
+	<title>Marope – NFT Marketplace</title>
+
+	<!-- JS -->
+	<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <script src="https://unpkg.com/moralis/dist/moralis.js"></script>
+	<!-- <script type="text/javascript" src="main_test.js"></script> -->
+	<script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+	<script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+
+
+
+</head>
+
+<body>
+<!--Navigation bar-->
+<div id="nav-placeholder">
+
+</div>
+<script>
+$(function(){
+  $("#nav-placeholder").load("navigation.html");
+});
+</script>
+<!--end of Navigation bar-->
+	<!-- end header -->
+	<!---------------------------------------------------------------------End of Home Page Nav Bar------------------------------------------------------------------------>
+
+
+	<!------------------------------------------------------------Start of Carousel Home Page Section ------------------------------------------------------------------------->
+	<!-- main content -->
+	<main class="main">
+		<!-- home -->
+		<div class="home home--hero">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="hero owl-carousel" id="hero">
+							<div class="hero__slide" data-bg="img/home/slide1.jpg">
+								<h1 class="hero__title">Explore digital assets</h1>
+								<p class="hero__text">Explore exclusive digital assets on Marope marketplace.</p>
+								<div class="hero__btns">
+									<a href="token.html" class="hero__btn hero__btn--clr">More details</a>
+								</div>
+							</div>
+
+							<div class="hero__slide" data-bg="img/home/slide2.jpg">
+								<h2 class="hero__title">Browse, buy, and sell NFTs</h2>
+								<p class="hero__text">Now You Can Buy, Sell, & Upload NFTs All in One Place. Get Started Today.</p>
+								<div class="hero__btns">
+									<a href="explore2.html" class="hero__btn hero__btn--clr">Explore</a>
+									<a href="signin.html" class="hero__btn">Upload</a>
+								</div>
+							</div>
+
+							<div class="hero__slide" data-bg="img/home/slide3.jpg">
+								<h2 class="hero__title">Marope – NFT Marketplace</h2>
+								<p class="hero__text">Digital marketplace for crypto collectibles and non-fungible
+									assets.</p>
+								<div class="hero__btns">
+									<a href="faq.html" class="hero__btn hero__btn--clr">FAQs</a>
+								</div>
+							</div>
+						</div>
+
+						<button class="main__nav main__nav--hero main__nav--prev" data-nav="#hero" type="button"><svg
+								xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+								<path
+									d="M17,11H9.41l3.3-3.29a1,1,0,1,0-1.42-1.42l-5,5a1,1,0,0,0-.21.33,1,1,0,0,0,0,.76,1,1,0,0,0,.21.33l5,5a1,1,0,0,0,1.42,0,1,1,0,0,0,0-1.42L9.41,13H17a1,1,0,0,0,0-2Z" />
+							</svg></button>
+						<button class="main__nav main__nav--hero main__nav--next" data-nav="#hero" type="button"><svg
+								xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+								<path
+									d="M17.92,11.62a1,1,0,0,0-.21-.33l-5-5a1,1,0,0,0-1.42,1.42L14.59,11H7a1,1,0,0,0,0,2h7.59l-3.3,3.29a1,1,0,0,0,0,1.42,1,1,0,0,0,1.42,0l5-5a1,1,0,0,0,.21-.33A1,1,0,0,0,17.92,11.62Z" />
+							</svg></button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- end home -->
+		<!---------------------------------------------------------End of Carousel Section Home Page------------------------------------------------------------>
+
+
+		<!---------------------------------------------------------Start of Explore Section-------------------------------------------------------------->
+		<div class="container">
+			<!-- explore -->
+			<section class="row row--grid">
+				<!-- title -->
+				<div class="col-12">
+					<div class="main__title">
+						<h2>Explore exclusive digital assets</h2>
+					</div>
+				</div>
+				<!-- end title -->
+
+				<!---------------------------------------------------------Start of Nav Tabs (Tab1-Tab2-Tab3-Tab4)-------------------------------------------------------------->
+				<!-- tabs nav -->
+				<div class="col-12">
+					<ul class="nav nav-tabs main__tabs" id="main__tabs" role="tablist">
+						<li class="nav-item">
+							<a class="nav-link active" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1"
+								aria-selected="true">All</a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2"
+								aria-selected="false">Art</a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link" data-toggle="tab" href="#tab-3" role="tab" aria-controls="tab-3"
+								aria-selected="false">Books</a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link" data-toggle="tab" href="#tab-4" role="tab" aria-controls="tab-4"
+								aria-selected="false">Music</a>
+						</li>
+					</ul>
+				</div>
+				<!-- end tabs nav -->
+				<!---------------------------------------------------------End of of Nav Tabs (Tab1-Tab2-Tab3-Tab4)-------------------------------------------------------------->
+
+				<!---------------------------------------------------------Start of Explore Section All (Tab1)-------------------------------------------------------------->
+
+				<div class="col-12">
+					<!-- tabs content -->
+					<div class="tab-content">
+						<div class="tab-pane fade show active" id="tab-1" role="tabpanel">
+							<div class="row row--grid">
+								<div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+									<!-- card -->
+									<div class="card">
+										<a href="item2iceworld.html" class="card__cover">
+											<img src="img/cover/nft10.gif" alt="">
+
+										</a>
+										<h3 class="card__title"><a href="item2iceworld.html">Ice World #95</a></h3>
+										<div class="card__author">
+											<img src="img/avatars/avatar.jpg" alt="">
+											<p style="color: white;"> @Iworld</p>
+										</div>
+										<div class="card__info">
+											<div class="card__price">
+												<span>Buy Now</span>
+												<span>10.00 ETH</span>
+											</div>
+
+											<script>
+												function clickCounter() {
+												  if(typeof(Storage) !== "undefined") {
+													if (localStorage.clickcount) {
+													  localStorage.clickcount = Number(localStorage.clickcount)+1;
+													} else {
+													  localStorage.clickcount = 1;
+													}
+													document.getElementById("result").innerHTML =  + localStorage.clickcount;
+												  } else {
+													document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+												  }
+												}
+												</script>
+
+											<button onclick="clickCounter()" class="card__likes" type="button">
+												<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+													<path
+														d="M20.16,5A6.29,6.29,0,0,0,12,4.36a6.27,6.27,0,0,0-8.16,9.48l6.21,6.22a2.78,2.78,0,0,0,3.9,0l6.21-6.22A6.27,6.27,0,0,0,20.16,5Zm-1.41,7.46-6.21,6.21a.76.76,0,0,1-1.08,0L5.25,12.43a4.29,4.29,0,0,1,0-6,4.27,4.27,0,0,1,6,0,1,1,0,0,0,1.42,0,4.27,4.27,0,0,1,6,0A4.29,4.29,0,0,1,18.75,12.43Z" />
+												</svg>
+												<span id="result"></span>		
+											</button>
+											
+										</div>
+									</div>
+									<!-- end card -->
+								</div>
+
+								<div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+									<!-- card -->
+									<div class="card">
+										<a href="item2.html" class="card__cover">
+											<img src="img/cover/music8.jpg" alt="music cover">
+										</a>
+										<audio controls>
+											<source src="music/Summer Night – Aftertune (No Copyright Music).mp3" type="audio/mpeg">
+  										</audio>
+										<h3 class="card__title"><a href="item2.html">Summer Night</a></h3>
+										<div class="card__author card__author--verified">
+											<img src="img/avatars/avatar3.jpg" alt="">
+											<p style="color: white;"> @Aftertune</p>
+										</div>
+										<div class="card__info">
+											<div class="card__price">
+												<span>Buy Now</span>
+												<span>2.61 ETH</span>
+											</div>
+
+											<button class="card__likes" type="button">
+												<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+													<path
+														d="M20.16,5A6.29,6.29,0,0,0,12,4.36a6.27,6.27,0,0,0-8.16,9.48l6.21,6.22a2.78,2.78,0,0,0,3.9,0l6.21-6.22A6.27,6.27,0,0,0,20.16,5Zm-1.41,7.46-6.21,6.21a.76.76,0,0,1-1.08,0L5.25,12.43a4.29,4.29,0,0,1,0-6,4.27,4.27,0,0,1,6,0,1,1,0,0,0,1.42,0,4.27,4.27,0,0,1,6,0A4.29,4.29,0,0,1,18.75,12.43Z" />
+												</svg>
+												<span>500</span>
+											</button>
+										</div>
+									</div>
+									<!-- end card -->
+								</div>
+
+								<div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+									<!-- card -->
+									<div class="card">
+										<a href="item2Dino.html" class="card__cover">
+											<img src="img/cover/nft9.png" alt="">
+
+										</a>
+										<h3 class="card__title"><a href="item2Dino.html">Zombie Dinosaur</a></h3>
+										<div class="card__author card__author--verified">
+											<img src="img/avatars/avatar3.jpg" alt="">
+											<p style="color: white;"> @Dapdin</p>
+										</div>
+										<div class="card__info">
+											<div class="card__price">
+												<span>Buy Now</span>
+												<span> 0.015 ETH</span>
+											</div>
+
+											<button class="card__likes" type="button">
+												<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+													<path
+														d="M20.16,5A6.29,6.29,0,0,0,12,4.36a6.27,6.27,0,0,0-8.16,9.48l6.21,6.22a2.78,2.78,0,0,0,3.9,0l6.21-6.22A6.27,6.27,0,0,0,20.16,5Zm-1.41,7.46-6.21,6.21a.76.76,0,0,1-1.08,0L5.25,12.43a4.29,4.29,0,0,1,0-6,4.27,4.27,0,0,1,6,0,1,1,0,0,0,1.42,0,4.27,4.27,0,0,1,6,0A4.29,4.29,0,0,1,18.75,12.43Z" />
+												</svg>
+												<span>702</span>
+											</button>
+										</div>
+									</div>
+									<!-- end card -->
+								</div>
+
+								<div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+									<!-- card -->
+									<div class="card">
+										<a href="item2BoredCat.html" class="card__cover">
+											<img src="img/cover/nft13.png" alt="">
+										</a>
+										<h3 class="card__title"><a href="item2BoredCat.html">Bored Cat</a></h3>
+										<div class="card__author card__author--verified">
+											<img src="img/avatars/avatar4.jpg" alt="">
+											<p style="color: white;"> @cbopr</p>
+										</div>
+										<div class="card__info">
+											<div class="card__price">
+												<span>Buy Now</span>
+												<span>3.49 ETH</span>
+											</div>
+
+											<button class="card__likes card__likes--active" type="button">
+												<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+													<path
+														d="M20.16,5A6.29,6.29,0,0,0,12,4.36a6.27,6.27,0,0,0-8.16,9.48l6.21,6.22a2.78,2.78,0,0,0,3.9,0l6.21-6.22A6.27,6.27,0,0,0,20.16,5Zm-1.41,7.46-6.21,6.21a.76.76,0,0,1-1.08,0L5.25,12.43a4.29,4.29,0,0,1,0-6,4.27,4.27,0,0,1,6,0,1,1,0,0,0,1.42,0,4.27,4.27,0,0,1,6,0A4.29,4.29,0,0,1,18.75,12.43Z" />
+												</svg>
+												<span>37</span>
+											</button>
+										</div>
+									</div>
+									<!-- end card -->
+								</div>
+
+								<div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+									<!-- card -->
+									<div class="card">
+										<a href="item2madrabbit.html" class="card__cover">
+											<img src="img/cover/nft11.png" alt="">
+										</a>
+										<h3 class="card__title"><a href="item2madrabbit.html">Mad Rabbits</a></h3>
+										<div class="card__author card__author--verified">
+											<img src="img/avatars/avatar5.jpg" alt="">
+											<p style="color: white;"> @MrRabbit</p>
+										</div>
+										<div class="card__info">
+											<div class="card__price">
+												<span>Buy Now</span>
+												<span>3.99 ETH</span>
+											</div>
+
+											<button class="card__likes" type="button">
+												<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+													<path
+														d="M20.16,5A6.29,6.29,0,0,0,12,4.36a6.27,6.27,0,0,0-8.16,9.48l6.21,6.22a2.78,2.78,0,0,0,3.9,0l6.21-6.22A6.27,6.27,0,0,0,20.16,5Zm-1.41,7.46-6.21,6.21a.76.76,0,0,1-1.08,0L5.25,12.43a4.29,4.29,0,0,1,0-6,4.27,4.27,0,0,1,6,0,1,1,0,0,0,1.42,0,4.27,4.27,0,0,1,6,0A4.29,4.29,0,0,1,18.75,12.43Z" />
+												</svg>
+												<span>23</span>
+											</button>
+										</div>
+									</div>
+									<!-- end card -->
+								</div>
+
+								<div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+									<!-- card -->
+									<div class="card">
+										<a href="item2Elon.html" class="card__cover">
+											<img src="img/cover/nft16.jpg" alt="">
+
+										</a>
+										<h3 class="card__title"><a href="item2Elon.html">Elon #7980</a></h3>
+										<div class="card__author card__author--verified">
+											<img src="img/avatars/avatar9.jpg" alt="">
+											<p style="color: white;"> @Golden_Elon</p>
+										</div>
+										<div class="card__info">
+											<div class="card__price">
+												<span>Buy Now</span>
+												<span>0.08 ETH</span>
+											</div>
+
+											<button class="card__likes" type="button">
+												<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+													<path
+														d="M20.16,5A6.29,6.29,0,0,0,12,4.36a6.27,6.27,0,0,0-8.16,9.48l6.21,6.22a2.78,2.78,0,0,0,3.9,0l6.21-6.22A6.27,6.27,0,0,0,20.16,5Zm-1.41,7.46-6.21,6.21a.76.76,0,0,1-1.08,0L5.25,12.43a4.29,4.29,0,0,1,0-6,4.27,4.27,0,0,1,6,0,1,1,0,0,0,1.42,0,4.27,4.27,0,0,1,6,0A4.29,4.29,0,0,1,18.75,12.43Z" />
+												</svg>
+												<span>358</span>
+											</button>
+										</div>
+									</div>
+									<!-- end card -->
+								</div>
+
+								<div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+									<!-- video card -->
+									<div class="card">
+										<a href="item2ape.html" class="card__cover card__cover--video">
+											<img src="img/cover/nft12.png" alt="">
+											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+												<path
+													d="M21.53,7.15a1,1,0,0,0-1,0L17,8.89A3,3,0,0,0,14,6H5A3,3,0,0,0,2,9v6a3,3,0,0,0,3,3h9a3,3,0,0,0,3-2.89l3.56,1.78A1,1,0,0,0,21,17a1,1,0,0,0,.53-.15A1,1,0,0,0,22,16V8A1,1,0,0,0,21.53,7.15ZM15,15a1,1,0,0,1-1,1H5a1,1,0,0,1-1-1V9A1,1,0,0,1,5,8h9a1,1,0,0,1,1,1Zm5-.62-3-1.5V11.12l3-1.5Z" />
+											</svg>
+										</a>
+										<h3 class="card__title"><a href="item2ape.html">Bored Ape #8232</a></h3>
+										<div class="card__author">
+											<img src="img/avatars/avatar10.jpg" alt="">
+											<p style="color: white;"> @bayc</p>
+										</div>
+										<div class="card__info">
+											<div class="card__price">
+												<span>Buy Now</span>
+												<span>2.05 ETH</span>
+											</div>
+
+											<button class="card__likes" type="button">
+												<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+													<path
+														d="M20.16,5A6.29,6.29,0,0,0,12,4.36a6.27,6.27,0,0,0-8.16,9.48l6.21,6.22a2.78,2.78,0,0,0,3.9,0l6.21-6.22A6.27,6.27,0,0,0,20.16,5Zm-1.41,7.46-6.21,6.21a.76.76,0,0,1-1.08,0L5.25,12.43a4.29,4.29,0,0,1,0-6,4.27,4.27,0,0,1,6,0,1,1,0,0,0,1.42,0,4.27,4.27,0,0,1,6,0A4.29,4.29,0,0,1,18.75,12.43Z" />
+												</svg>
+												<span>90</span>
+											</button>
+										</div>
+									</div>
+									<!-- end video card -->
+								</div>
+
+								<div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+									<!-- card -->
+									<div class="card">
+										<a href="item2heroe.html" class="card__cover">
+											<img src="img/cover/nft13.gif" alt="">
+										</a>
+										<h3 class="card__title"><a href="item2heroe.html">Crypto Heroe #717</a></h3>
+										<div class="card__author">
+											<img src="img/avatars/avatar11.jpg" alt="">
+											<p style="color: white;"> @supermatic</p>
+										</div>
+										<div class="card__info">
+											<div class="card__price">
+												<span>Buy Now</span>
+												<span>0.03 ETH</span>
+											</div>
+
+											<button class="card__likes" type="button">
+												<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+													<path
+														d="M20.16,5A6.29,6.29,0,0,0,12,4.36a6.27,6.27,0,0,0-8.16,9.48l6.21,6.22a2.78,2.78,0,0,0,3.9,0l6.21-6.22A6.27,6.27,0,0,0,20.16,5Zm-1.41,7.46-6.21,6.21a.76.76,0,0,1-1.08,0L5.25,12.43a4.29,4.29,0,0,1,0-6,4.27,4.27,0,0,1,6,0,1,1,0,0,0,1.42,0,4.27,4.27,0,0,1,6,0A4.29,4.29,0,0,1,18.75,12.43Z" />
+												</svg>
+												<span>64</span>
+											</button>
+										</div>
+									</div>
+									<!-- end card -->
+								</div>
+							</div>
+
+							<!-- paginator 
+							<div class="row row--grid">
+								<div class="col-12">
+									<div class="paginator">
+										<span class="paginator__pages">9 from 169</span>
+
+										<ul class="paginator__list">
+											<li>
+												<a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+														<path
+															d="M17,11H9.41l3.3-3.29a1,1,0,1,0-1.42-1.42l-5,5a1,1,0,0,0-.21.33,1,1,0,0,0,0,.76,1,1,0,0,0,.21.33l5,5a1,1,0,0,0,1.42,0,1,1,0,0,0,0-1.42L9.41,13H17a1,1,0,0,0,0-2Z" />
+													</svg></a>
+											</li>
+											<li class="active"><a href="#">1</a></li>
+											<li><a href="#">2</a></li>
+											<li><a href="#">3</a></li>
+											<li><a href="#">4</a></li>
+											<li>
+												<a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+														<path
+															d="M17.92,11.62a1,1,0,0,0-.21-.33l-5-5a1,1,0,0,0-1.42,1.42L14.59,11H7a1,1,0,0,0,0,2h7.59l-3.3,3.29a1,1,0,0,0,0,1.42,1,1,0,0,0,1.42,0l5-5a1,1,0,0,0,.21-.33A1,1,0,0,0,17.92,11.62Z" />
+													</svg></a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<!-- end paginator -->
+						</div>
+						<!--------------------------------------------------------------------------End of Explore Section All (Tab1)----------------------------------------------------------------------------->
+
+
+						<!---------------------------------------------------------Start of Explore Section Art (Tab2)-------------------------------------------------------------->
+						<div class="tab-pane fade" id="tab-2" role="tabpanel">
+							<div class="row row--grid">
+								<div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+									<!-- card -->
+									<div class="card">
+										<a href="item2Lion.html" class="card__cover">
+											<img src="img/cover/nft14.jpg" alt="nft picture">
+										</a>
+										<h3 class="card__title"><a href="item2Lion.html">Lazy Lion#3198</a></h3>
+										<div class="card__author">
+											<img src="img/avatars/avatar.jpg" alt="">
+											<p style="color: white;"> @82888A</p>
+										</div>
+										<div class="card__info">
+											<div class="card__price">
+												<span>Buy Now</span>
+												<span>1.625 ETH</span>
+											</div>
+											
+											<button class="card__likes" type="button">
+												<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.16,5A6.29,6.29,0,0,0,12,4.36a6.27,6.27,0,0,0-8.16,9.48l6.21,6.22a2.78,2.78,0,0,0,3.9,0l6.21-6.22A6.27,6.27,0,0,0,20.16,5Zm-1.41,7.46-6.21,6.21a.76.76,0,0,1-1.08,0L5.25,12.43a4.29,4.29,0,0,1,0-6,4.27,4.27,0,0,1,6,0,1,1,0,0,0,1.42,0,4.27,4.27,0,0,1,6,0A4.29,4.29,0,0,1,18.75,12.43Z"/></svg>
+												<span>189</span>
+											</button>
+										</div>
+									</div>
+									<!-- end card -->
+								</div>
+
+								<div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+									<!-- card -->
+									<div class="card">
+										<a href="item2.html" class="card__cover">
+											<img src="img/cover/nft17.png" alt="">
+										</a>
+										<h3 class="card__title"><a href="item2.html">Les Immortels, the Treachery of Artificial Shadows</a></h3>
+										<div class="card__author card__author--verified">
+											<img src="img/avatars/avatar3.jpg" alt="">
+											<p style="color: white;"> @MrRabbit</p>
+										</div>
+										<div class="card__info">
+											<div class="card__price">
+												<span>Buy Now</span>
+												<span>2.61 ETH</span>
+											</div>
+											
+											<button class="card__likes" type="button">
+												<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.16,5A6.29,6.29,0,0,0,12,4.36a6.27,6.27,0,0,0-8.16,9.48l6.21,6.22a2.78,2.78,0,0,0,3.9,0l6.21-6.22A6.27,6.27,0,0,0,20.16,5Zm-1.41,7.46-6.21,6.21a.76.76,0,0,1-1.08,0L5.25,12.43a4.29,4.29,0,0,1,0-6,4.27,4.27,0,0,1,6,0,1,1,0,0,0,1.42,0,4.27,4.27,0,0,1,6,0A4.29,4.29,0,0,1,18.75,12.43Z"/></svg>
+												<span>702</span>
+											</button>
+										</div>
+									</div>
+									<!-- end card -->
+								</div>
+
+								<div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+									<!-- card -->
+									<div class="card">
+										<a href="item2.html" class="card__cover">
+											<img src="img/cover/nft18.jpeg" alt="">
+										</a>
+										<h3 class="card__title"><a href="item2.html">To Infinity And Beyond</a></h3>
+										<div class="card__author card__author--verified">
+											<img src="img/avatars/avatar2.jpg" alt="">
+											<p style="color: white;"> @MrRabbit</p>
+										</div>
+										<div class="card__info">
+											<div class="card__price">
+												<span>Buy Now</span>
+												<span>5.04 ETH</span>
+											</div>
+											
+											<button class="card__likes" type="button">
+												<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.16,5A6.29,6.29,0,0,0,12,4.36a6.27,6.27,0,0,0-8.16,9.48l6.21,6.22a2.78,2.78,0,0,0,3.9,0l6.21-6.22A6.27,6.27,0,0,0,20.16,5Zm-1.41,7.46-6.21,6.21a.76.76,0,0,1-1.08,0L5.25,12.43a4.29,4.29,0,0,1,0-6,4.27,4.27,0,0,1,6,0,1,1,0,0,0,1.42,0,4.27,4.27,0,0,1,6,0A4.29,4.29,0,0,1,18.75,12.43Z"/></svg>
+												<span></span>
+											</button>
+										</div>
+									</div>
+									<!-- end card -->
+								</div>
+
+								<div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+									<!-- card -->
+									<div class="card">
+										<a href="item2.html" class="card__cover">
+											<img src="img/cover/nft19.jpeg" alt="">
+										</a>
+										<h3 class="card__title"><a href="item2.html">Flowers in Concrete</a></h3>
+										<div class="card__author">
+											<img src="img/avatars/avatar4.jpg" alt="">
+											<p style="color: white;"> @MrRabbit</p>
+										</div>
+										<div class="card__info">
+											<div class="card__price">
+												<span>Buy Now</span>
+												<span>3.19 ETH</span>
+											</div>
+											
+											<button class="card__likes card__likes--active" type="button">
+												<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.16,5A6.29,6.29,0,0,0,12,4.36a6.27,6.27,0,0,0-8.16,9.48l6.21,6.22a2.78,2.78,0,0,0,3.9,0l6.21-6.22A6.27,6.27,0,0,0,20.16,5Zm-1.41,7.46-6.21,6.21a.76.76,0,0,1-1.08,0L5.25,12.43a4.29,4.29,0,0,1,0-6,4.27,4.27,0,0,1,6,0,1,1,0,0,0,1.42,0,4.27,4.27,0,0,1,6,0A4.29,4.29,0,0,1,18.75,12.43Z"/></svg>
+												<span>37</span>
+											</button>
+										</div>
+									</div>
+									<!-- end card -->
+								</div>
+
+								<div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+									<!-- card -->
+									<div class="card">
+										<a href="item2.html" class="card__cover">
+											<img src="img/cover/nft20.jpeg" alt="">
+										</a>
+										<h3 class="card__title"><a href="item2.html">Industrial Revolution</a></h3>
+										<div class="card__author card__author--verified">
+											<img src="img/avatars/avatar5.jpg" alt="">
+											<p style="color: white;"> @MrRabbit</p>
+										</div>
+										<div class="card__info">
+											<div class="card__price">
+												<span>Buy Now</span>
+												<span>1.11 ETH</span>
+											</div>
+											
+											<button class="card__likes" type="button">
+												<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.16,5A6.29,6.29,0,0,0,12,4.36a6.27,6.27,0,0,0-8.16,9.48l6.21,6.22a2.78,2.78,0,0,0,3.9,0l6.21-6.22A6.27,6.27,0,0,0,20.16,5Zm-1.41,7.46-6.21,6.21a.76.76,0,0,1-1.08,0L5.25,12.43a4.29,4.29,0,0,1,0-6,4.27,4.27,0,0,1,6,0,1,1,0,0,0,1.42,0,4.27,4.27,0,0,1,6,0A4.29,4.29,0,0,1,18.75,12.43Z"/></svg>
+												<span>23</span>
+											</button>
+										</div>
+									</div>
+									<!-- end card -->
+								</div>
+
+								<div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+									<!-- card -->
+									<div class="card">
+										<a href="item2.html" class="card__cover">
+											<img src="img/cover/nft21.jpeg" alt="">
+										</a>
+										<h3 class="card__title"><a href="item2.html">I Love You</a></h3>
+										<div class="card__author card__author--verified">
+											<img src="img/avatars/avatar9.jpg" alt="">
+											<p style="color: white;"> @MrRabbit</p>
+										</div>
+										<div class="card__info">
+											<div class="card__price">
+												<span>Buy Now</span>
+												<span>0.99 ETH</span>
+											</div>
+											
+											<button class="card__likes" type="button">
+												<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.16,5A6.29,6.29,0,0,0,12,4.36a6.27,6.27,0,0,0-8.16,9.48l6.21,6.22a2.78,2.78,0,0,0,3.9,0l6.21-6.22A6.27,6.27,0,0,0,20.16,5Zm-1.41,7.46-6.21,6.21a.76.76,0,0,1-1.08,0L5.25,12.43a4.29,4.29,0,0,1,0-6,4.27,4.27,0,0,1,6,0,1,1,0,0,0,1.42,0,4.27,4.27,0,0,1,6,0A4.29,4.29,0,0,1,18.75,12.43Z"/></svg>
+												<span>358</span>
+											</button>
+										</div>
+									</div>
+									<!-- end card -->
+								</div>
+
+								<div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+									<!-- card -->
+									<div class="card">
+										<a href="item2.html" class="card__cover">
+											<img src="img/cover/nft22.jpeg" alt="">
+										</a>
+										<h3 class="card__title"><a href="item2.html">Tranquility</a></h3>
+										<div class="card__author">
+											<img src="img/avatars/avatar11.jpg" alt="">
+											<p style="color: white;"> @MrRabbit</p>
+										</div>
+										<div class="card__info">
+											<div class="card__price">
+												<span>Buy Now</span>
+												<span>2.55 ETH</span>
+											</div>
+											
+											<button class="card__likes" type="button">
+												<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.16,5A6.29,6.29,0,0,0,12,4.36a6.27,6.27,0,0,0-8.16,9.48l6.21,6.22a2.78,2.78,0,0,0,3.9,0l6.21-6.22A6.27,6.27,0,0,0,20.16,5Zm-1.41,7.46-6.21,6.21a.76.76,0,0,1-1.08,0L5.25,12.43a4.29,4.29,0,0,1,0-6,4.27,4.27,0,0,1,6,0,1,1,0,0,0,1.42,0,4.27,4.27,0,0,1,6,0A4.29,4.29,0,0,1,18.75,12.43Z"/></svg>
+												<span>64</span>
+											</button>
+										</div>
+									</div>
+									<!-- end card -->
+								</div>
+
+								<div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+									<!-- card -->
+									<div class="card">
+										<a href="item2.html" class="card__cover">
+											<img src="img/cover/nft23.jpeg" alt="">
+										</a>
+										<h3 class="card__title"><a href="item2.html">Tranquility</a></h3>
+										<div class="card__author">
+											<img src="img/avatars/avatar11.jpg" alt="">
+											<p style="color: white;"> @MrRabbit</p>
+										</div>
+										<div class="card__info">
+											<div class="card__price">
+												<span>Buy Now</span>
+												<span>2.55 ETH</span>
+											</div>
+											
+											<button class="card__likes" type="button">
+												<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.16,5A6.29,6.29,0,0,0,12,4.36a6.27,6.27,0,0,0-8.16,9.48l6.21,6.22a2.78,2.78,0,0,0,3.9,0l6.21-6.22A6.27,6.27,0,0,0,20.16,5Zm-1.41,7.46-6.21,6.21a.76.76,0,0,1-1.08,0L5.25,12.43a4.29,4.29,0,0,1,0-6,4.27,4.27,0,0,1,6,0,1,1,0,0,0,1.42,0,4.27,4.27,0,0,1,6,0A4.29,4.29,0,0,1,18.75,12.43Z"/></svg>
+												<span>64</span>
+											</button>
+										</div>
+									</div>
+									<!-- end card -->
+								</div>
+							</div>
+
+							<!-- paginator 
+							<div class="row row--grid">
+								<div class="col-12">
+									<div class="paginator">
+										<span class="paginator__pages">9 from 169</span>
+
+										<ul class="paginator__list">
+											<li>
+												<a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17,11H9.41l3.3-3.29a1,1,0,1,0-1.42-1.42l-5,5a1,1,0,0,0-.21.33,1,1,0,0,0,0,.76,1,1,0,0,0,.21.33l5,5a1,1,0,0,0,1.42,0,1,1,0,0,0,0-1.42L9.41,13H17a1,1,0,0,0,0-2Z"/></svg></a>
+											</li>
+											<li class="active"><a href="#">1</a></li>
+											<li><a href="#">2</a></li>
+											<li><a href="#">3</a></li>
+											<li><a href="#">4</a></li>
+											<li>
+												<a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17.92,11.62a1,1,0,0,0-.21-.33l-5-5a1,1,0,0,0-1.42,1.42L14.59,11H7a1,1,0,0,0,0,2h7.59l-3.3,3.29a1,1,0,0,0,0,1.42,1,1,0,0,0,1.42,0l5-5a1,1,0,0,0,.21-.33A1,1,0,0,0,17.92,11.62Z"/></svg></a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<!-- end paginator -->
+						</div>
+						<!--------------------------------------------------------------------------End of Explore Section Art (Tab2)----------------------------------------------------------------------------->
+					
+
+						<!---------------------------------------------------------Start of Explore Section Books (Tab3)-------------------------------------------------------------->
+						<div class="tab-pane fade" id="tab-3" role="tabpanel">
+							<div class="row row--grid">
+								<div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+									<!-- card -->
+									<div class="card">
+										<a href="item2.html" class="card__cover">
+											<img src="img/cover/cover3.jpg" alt="">
+										</a>
+										<h3 class="card__title"><a href="item2.html">Walking on Air</a></h3>
+										<div class="card__author">
+											<img src="img/avatars/avatar.jpg" alt="">
+											<p style="color: white;"> @MrRabbit</p>
+										</div>
+										<div class="card__info">
+											<div class="card__price">
+												<span>Buy Now</span>
+												<span>4.89 ETH</span>
+											</div>
+
+											<button class="card__likes" type="button">
+												<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+													<path
+														d="M20.16,5A6.29,6.29,0,0,0,12,4.36a6.27,6.27,0,0,0-8.16,9.48l6.21,6.22a2.78,2.78,0,0,0,3.9,0l6.21-6.22A6.27,6.27,0,0,0,20.16,5Zm-1.41,7.46-6.21,6.21a.76.76,0,0,1-1.08,0L5.25,12.43a4.29,4.29,0,0,1,0-6,4.27,4.27,0,0,1,6,0,1,1,0,0,0,1.42,0,4.27,4.27,0,0,1,6,0A4.29,4.29,0,0,1,18.75,12.43Z" />
+												</svg>
+												<span>189</span>
+											</button>
+										</div>
+									</div>
+									<!-- end card -->
+								</div>
+
+								<div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+									<!-- card -->
+									<div class="card">
+										<a href="item2.html" class="card__cover">
+											<img src="img/cover/cover2.jpg" alt="">
+										</a>
+										<h3 class="card__title"><a href="item2.html">Les Immortels, the Treachery of
+												Artificial Shadows</a></h3>
+										<div class="card__author card__author--verified">
+											<img src="img/avatars/avatar3.jpg" alt="">
+											<p style="color: white;"> @MrRabbit</p>
+										</div>
+										<div class="card__info">
+											<div class="card__price">
+												<span>Buy Now</span>
+												<span>2.61 ETH</span>
+											</div>
+
+											<button class="card__likes" type="button">
+												<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+													<path
+														d="M20.16,5A6.29,6.29,0,0,0,12,4.36a6.27,6.27,0,0,0-8.16,9.48l6.21,6.22a2.78,2.78,0,0,0,3.9,0l6.21-6.22A6.27,6.27,0,0,0,20.16,5Zm-1.41,7.46-6.21,6.21a.76.76,0,0,1-1.08,0L5.25,12.43a4.29,4.29,0,0,1,0-6,4.27,4.27,0,0,1,6,0,1,1,0,0,0,1.42,0,4.27,4.27,0,0,1,6,0A4.29,4.29,0,0,1,18.75,12.43Z" />
+												</svg>
+												<span>702</span>
+											</button>
+										</div>
+									</div>
+									<!-- end card -->
+								</div>
+
+								<div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+									<!-- card -->
+									<div class="card">
+										<a href="item2.html" class="card__cover">
+											<img src="img/cover/cover4.jpg" alt="">
+										</a>
+										<h3 class="card__title"><a href="item2.html">Tranquility</a></h3>
+										<div class="card__author">
+											<img src="img/avatars/avatar11.jpg" alt="">
+											<p style="color: white;"> @MrRabbit</p>
+										</div>
+										<div class="card__info">
+											<div class="card__price">
+												<span>Buy Now</span>
+												<span>2.55 ETH</span>
+											</div>
+											
+											<button class="card__likes" type="button">
+												<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.16,5A6.29,6.29,0,0,0,12,4.36a6.27,6.27,0,0,0-8.16,9.48l6.21,6.22a2.78,2.78,0,0,0,3.9,0l6.21-6.22A6.27,6.27,0,0,0,20.16,5Zm-1.41,7.46-6.21,6.21a.76.76,0,0,1-1.08,0L5.25,12.43a4.29,4.29,0,0,1,0-6,4.27,4.27,0,0,1,6,0,1,1,0,0,0,1.42,0,4.27,4.27,0,0,1,6,0A4.29,4.29,0,0,1,18.75,12.43Z"/></svg>
+												<span>64</span>
+											</button>
+										</div>
+									</div>
+									<!-- end card -->
+								</div>
+
+								<div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+									<!-- card -->
+									<div class="card">
+										<a href="item2.html" class="card__cover">
+											<img src="img/cover/cover4.jpg" alt="">
+										</a>
+										<h3 class="card__title"><a href="item2.html">Flowers in Concrete (Modal)</a></h3>
+										<div class="card__author">
+											<img src="img/avatars/avatar4.jpg" alt="">
+											<p style="color: white;"> @MrRabbit</p>
+										</div>
+										<div class="card__info">
+											<div class="card__price">
+												<span>Buy Now</span>
+												<span>3.19 ETH</span>
+											</div>
+
+											<button class="card__likes card__likes--active" type="button">
+												<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+													<path
+														d="M20.16,5A6.29,6.29,0,0,0,12,4.36a6.27,6.27,0,0,0-8.16,9.48l6.21,6.22a2.78,2.78,0,0,0,3.9,0l6.21-6.22A6.27,6.27,0,0,0,20.16,5Zm-1.41,7.46-6.21,6.21a.76.76,0,0,1-1.08,0L5.25,12.43a4.29,4.29,0,0,1,0-6,4.27,4.27,0,0,1,6,0,1,1,0,0,0,1.42,0,4.27,4.27,0,0,1,6,0A4.29,4.29,0,0,1,18.75,12.43Z" />
+												</svg>
+												<span>37</span>
+											</button>
+										</div>
+									</div>
+									<!-- end card -->
+								</div>
+
+								<div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+									<!-- card -->
+									<div class="card">
+										<a href="item2.html" class="card__cover">
+											<img src="img/cover/cover5.jpg" alt="">
+										</a>
+										<h3 class="card__title"><a href="item2.html">Industrial Revolution</a></h3>
+										<div class="card__author card__author--verified">
+											<img src="img/avatars/avatar5.jpg" alt="">
+											<p style="color: white;"> @MrRabbit</p>
+										</div>
+										<div class="card__info">
+											<div class="card__price">
+												<span>Buy Now</span>
+												<span>1.11 ETH</span>
+											</div>
+
+											<button class="card__likes" type="button">
+												<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+													<path
+														d="M20.16,5A6.29,6.29,0,0,0,12,4.36a6.27,6.27,0,0,0-8.16,9.48l6.21,6.22a2.78,2.78,0,0,0,3.9,0l6.21-6.22A6.27,6.27,0,0,0,20.16,5Zm-1.41,7.46-6.21,6.21a.76.76,0,0,1-1.08,0L5.25,12.43a4.29,4.29,0,0,1,0-6,4.27,4.27,0,0,1,6,0,1,1,0,0,0,1.42,0,4.27,4.27,0,0,1,6,0A4.29,4.29,0,0,1,18.75,12.43Z" />
+												</svg>
+												<span>23</span>
+											</button>
+										</div>
+									</div>
+									<!-- end card -->
+								</div>
+
+								<div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+									<!-- card -->
+									<div class="card">
+										<a href="item2.html" class="card__cover">
+											<img src="img/cover/cover6.jpg" alt="">
+										</a>
+										<h3 class="card__title"><a href="item2.html">I Love You</a></h3>
+										<div class="card__author card__author--verified">
+											<img src="img/avatars/avatar9.jpg" alt="">
+											<p style="color: white;"> @MrRabbit</p>
+										</div>
+										<div class="card__info">
+											<div class="card__price">
+												<span>Buy Now</span>
+												<span>0.99 ETH</span>
+											</div>
+
+											<button class="card__likes" type="button">
+												<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+													<path
+														d="M20.16,5A6.29,6.29,0,0,0,12,4.36a6.27,6.27,0,0,0-8.16,9.48l6.21,6.22a2.78,2.78,0,0,0,3.9,0l6.21-6.22A6.27,6.27,0,0,0,20.16,5Zm-1.41,7.46-6.21,6.21a.76.76,0,0,1-1.08,0L5.25,12.43a4.29,4.29,0,0,1,0-6,4.27,4.27,0,0,1,6,0,1,1,0,0,0,1.42,0,4.27,4.27,0,0,1,6,0A4.29,4.29,0,0,1,18.75,12.43Z" />
+												</svg>
+												<span>358</span>
+											</button>
+										</div>
+									</div>
+									<!-- end card -->
+								</div>
+
+								<div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+									<!-- card -->
+									<div class="card">
+										<a href="item2.html" class="card__cover">
+											<img src="img/cover/cover6.jpg" alt="">
+										</a>
+										<h3 class="card__title"><a href="item2.html">I Love You</a></h3>
+										<div class="card__author card__author--verified">
+											<img src="img/avatars/avatar9.jpg" alt="">
+											<p style="color: white;"> @MrRabbit</p>
+										</div>
+										<div class="card__info">
+											<div class="card__price">
+												<span>Buy Now</span>
+												<span>0.99 ETH</span>
+											</div>
+
+											<button class="card__likes" type="button">
+												<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+													<path
+														d="M20.16,5A6.29,6.29,0,0,0,12,4.36a6.27,6.27,0,0,0-8.16,9.48l6.21,6.22a2.78,2.78,0,0,0,3.9,0l6.21-6.22A6.27,6.27,0,0,0,20.16,5Zm-1.41,7.46-6.21,6.21a.76.76,0,0,1-1.08,0L5.25,12.43a4.29,4.29,0,0,1,0-6,4.27,4.27,0,0,1,6,0,1,1,0,0,0,1.42,0,4.27,4.27,0,0,1,6,0A4.29,4.29,0,0,1,18.75,12.43Z" />
+												</svg>
+												<span>358</span>
+											</button>
+										</div>
+									</div>
+									<!-- end card -->
+								</div>
+
+								<div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+									<!-- card -->
+									<div class="card">
+										<a href="item2.html" class="card__cover">
+											<img src="img/cover/cover8.jpg" alt="">
+										</a>
+										<h3 class="card__title"><a href="item2.html">Tranquility</a></h3>
+										<div class="card__author">
+											<img src="img/avatars/avatar11.jpg" alt="">
+											<p style="color: white;"> @MrRabbit</p>
+										</div>
+										<div class="card__info">
+											<div class="card__price">
+												<span>Buy Now</span>
+												<span>2.55 ETH</span>
+											</div>
+
+											<button class="card__likes" type="button">
+												<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+													<path
+														d="M20.16,5A6.29,6.29,0,0,0,12,4.36a6.27,6.27,0,0,0-8.16,9.48l6.21,6.22a2.78,2.78,0,0,0,3.9,0l6.21-6.22A6.27,6.27,0,0,0,20.16,5Zm-1.41,7.46-6.21,6.21a.76.76,0,0,1-1.08,0L5.25,12.43a4.29,4.29,0,0,1,0-6,4.27,4.27,0,0,1,6,0,1,1,0,0,0,1.42,0,4.27,4.27,0,0,1,6,0A4.29,4.29,0,0,1,18.75,12.43Z" />
+												</svg>
+												<span>64</span>
+											</button>
+										</div>
+									</div>
+									<!-- end card -->
+								</div>
+							</div>
+
+							<!-- paginator 
+							<div class="row row--grid">
+								<div class="col-12">
+									<div class="paginator">
+										<span class="paginator__pages">9 from 169</span>
+
+										<ul class="paginator__list">
+											<li>
+												<a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+														<path
+															d="M17,11H9.41l3.3-3.29a1,1,0,1,0-1.42-1.42l-5,5a1,1,0,0,0-.21.33,1,1,0,0,0,0,.76,1,1,0,0,0,.21.33l5,5a1,1,0,0,0,1.42,0,1,1,0,0,0,0-1.42L9.41,13H17a1,1,0,0,0,0-2Z" />
+													</svg></a>
+											</li>
+											<li class="active"><a href="#">1</a></li>
+											<li><a href="#">2</a></li>
+											<li><a href="#">3</a></li>
+											<li><a href="#">4</a></li>
+											<li>
+												<a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+														<path
+															d="M17.92,11.62a1,1,0,0,0-.21-.33l-5-5a1,1,0,0,0-1.42,1.42L14.59,11H7a1,1,0,0,0,0,2h7.59l-3.3,3.29a1,1,0,0,0,0,1.42,1,1,0,0,0,1.42,0l5-5a1,1,0,0,0,.21-.33A1,1,0,0,0,17.92,11.62Z" />
+													</svg></a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<!-- end paginator -->
+						</div>
+						<!--------------------------------------------------------------------------End of Explore Section Books (Tab3)----------------------------------------------------------------------------->
+
+
+
+						<!---------------------------------------------------------Start of Explore Section Music (Tab4)-------------------------------------------------------------->
+						<div class="tab-pane fade" id="tab-4" role="tabpanel">
+							<div class="row row--grid">
+								<div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+									<!-- card -->
+									<div class="card">
+										<a href="item2.html" class="card__cover">
+											<img src="img/cover/music1.jpg" alt="music cover">
+										</a>
+										<audio controls>
+											<source src="music/I Need You – LiQWYD (No Copyright Music).mp3" type="audio/mpeg">
+  										</audio>
+										<h3 class="card__title"><a href="item2.html">I Need You</a></h3>
+										<div class="card__author">
+											<img src="img/avatars/avatar.jpg" alt="">
+											<p style="color: white;"> @LIQWYD</p>
+										</div>
+										<div class="card__info">
+											<div class="card__price">
+												<span>Buy Now</span>
+												<span>4.89 ETH</span>
+											</div>
+
+											<button class="card__likes" type="button">
+												<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+													<path
+														d="M20.16,5A6.29,6.29,0,0,0,12,4.36a6.27,6.27,0,0,0-8.16,9.48l6.21,6.22a2.78,2.78,0,0,0,3.9,0l6.21-6.22A6.27,6.27,0,0,0,20.16,5Zm-1.41,7.46-6.21,6.21a.76.76,0,0,1-1.08,0L5.25,12.43a4.29,4.29,0,0,1,0-6,4.27,4.27,0,0,1,6,0,1,1,0,0,0,1.42,0,4.27,4.27,0,0,1,6,0A4.29,4.29,0,0,1,18.75,12.43Z" />
+												</svg>
+												<span>189</span>
+											</button>
+										</div>
+									</div>
+									<!-- end card -->
+								</div>
+
+								<div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+									<!-- card -->
+									<div class="card">
+										<a href="item2.html" class="card__cover">
+											<img src="img/cover/music2.jpg" alt="music cover">
+										</a>
+										<audio controls>
+											<source src="music/Justhea - Day Off.mp3" type="audio/mpeg">
+  										</audio>
+										<h3 class="card__title"><a href="item2.html">Day Off</a></h3>
+										<div class="card__author card__author--verified">
+											<img src="img/avatars/avatar3.jpg" alt="">
+											<p style="color: white;"> @Justhea</p>
+										</div>
+										<div class="card__info">
+											<div class="card__price">
+												<span>Buy Now</span>
+												<span>2.61 ETH</span>
+											</div>
+
+											<button class="card__likes" type="button">
+												<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+													<path
+														d="M20.16,5A6.29,6.29,0,0,0,12,4.36a6.27,6.27,0,0,0-8.16,9.48l6.21,6.22a2.78,2.78,0,0,0,3.9,0l6.21-6.22A6.27,6.27,0,0,0,20.16,5Zm-1.41,7.46-6.21,6.21a.76.76,0,0,1-1.08,0L5.25,12.43a4.29,4.29,0,0,1,0-6,4.27,4.27,0,0,1,6,0,1,1,0,0,0,1.42,0,4.27,4.27,0,0,1,6,0A4.29,4.29,0,0,1,18.75,12.43Z" />
+												</svg>
+												<span>702</span>
+											</button>
+										</div>
+									</div>
+									<!-- end card -->
+								</div>
+
+								<div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+									<!-- carousel card -->
+									<div class="card">
+										<a href="item2.html" class="card__cover">
+											<img src="img/cover/music3.jpg" alt="music cover">
+										</a>
+										<audio controls>
+											<source src="music/MBB - Sunrise.wav" type="audio/mpeg">
+  										</audio>
+										<h3 class="card__title"><a href="item2.html">Sunrise</a></h3>
+										<div class="card__author card__author--verified">
+											<img src="img/avatars/avatar2.jpg" alt="">
+											<p style="color: white;"> @MBB</p>
+										</div>
+										<div class="card__info">
+											<div class="card__price">
+												<span>Buy Now</span>
+												<span>5.04 ETH</span>
+											</div>
+
+											<button class="card__likes" type="button">
+												<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+													<path
+														d="M20.16,5A6.29,6.29,0,0,0,12,4.36a6.27,6.27,0,0,0-8.16,9.48l6.21,6.22a2.78,2.78,0,0,0,3.9,0l6.21-6.22A6.27,6.27,0,0,0,20.16,5Zm-1.41,7.46-6.21,6.21a.76.76,0,0,1-1.08,0L5.25,12.43a4.29,4.29,0,0,1,0-6,4.27,4.27,0,0,1,6,0,1,1,0,0,0,1.42,0,4.27,4.27,0,0,1,6,0A4.29,4.29,0,0,1,18.75,12.43Z" />
+												</svg>
+												<span></span>
+											</button>
+										</div>
+									</div>
+									<!-- end carousel card -->
+								</div>
+
+								<div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+									<!-- card -->
+									<div class="card">
+										<a href="item2.html" class="card__cover">
+											<img src="img/cover/music4.jpg" alt="music cover">
+										</a>
+										<audio controls>
+											<source src="music/Sunset – LiQWYD (No Copyright Music).mp3" type="audio/mpeg">
+  										</audio>
+										<h3 class="card__title"><a href="item2.html">Sunset</a></h3>
+										<div class="card__author">
+											<img src="img/avatars/avatar4.jpg" alt="">
+											<p style="color: white;"> @LIQWYD</p>
+										</div>
+										<div class="card__info">
+											<div class="card__price">
+												<span>Buy Now</span>
+												<span>3.19 ETH</span>
+											</div>
+
+											<button class="card__likes card__likes--active" type="button">
+												<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+													<path
+														d="M20.16,5A6.29,6.29,0,0,0,12,4.36a6.27,6.27,0,0,0-8.16,9.48l6.21,6.22a2.78,2.78,0,0,0,3.9,0l6.21-6.22A6.27,6.27,0,0,0,20.16,5Zm-1.41,7.46-6.21,6.21a.76.76,0,0,1-1.08,0L5.25,12.43a4.29,4.29,0,0,1,0-6,4.27,4.27,0,0,1,6,0,1,1,0,0,0,1.42,0,4.27,4.27,0,0,1,6,0A4.29,4.29,0,0,1,18.75,12.43Z" />
+												</svg>
+												<span>37</span>
+											</button>
+										</div>
+									</div>
+									<!-- end card -->
+								</div>
+
+								<div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+									<!-- card -->
+									<div class="card">
+										<a href="item2.html" class="card__cover">
+											<img src="img/cover/music5.jpg" alt="music cover">
+										</a>
+										<audio controls>
+											<source src="music/Take Me Away - Tobjan.mp3" type="audio/mpeg">
+  										</audio>
+										<h3 class="card__title"><a href="item2.html">Take Me Away</a></h3>
+										<div class="card__author card__author--verified">
+											<img src="img/avatars/avatar5.jpg" alt="">
+											<p style="color: white;"> @Tobjan</p>
+										</div>
+										<div class="card__info">
+											<div class="card__price">
+												<span>Buy Now</span>
+												<span>1.11 ETH</span>
+											</div>
+
+											<button class="card__likes" type="button">
+												<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+													<path
+														d="M20.16,5A6.29,6.29,0,0,0,12,4.36a6.27,6.27,0,0,0-8.16,9.48l6.21,6.22a2.78,2.78,0,0,0,3.9,0l6.21-6.22A6.27,6.27,0,0,0,20.16,5Zm-1.41,7.46-6.21,6.21a.76.76,0,0,1-1.08,0L5.25,12.43a4.29,4.29,0,0,1,0-6,4.27,4.27,0,0,1,6,0,1,1,0,0,0,1.42,0,4.27,4.27,0,0,1,6,0A4.29,4.29,0,0,1,18.75,12.43Z" />
+												</svg>
+												<span>23</span>
+											</button>
+										</div>
+									</div>
+									<!-- end card -->
+								</div>
+
+								<div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+									<!-- card -->
+									<div class="card">
+										<a href="item2.html" class="card__cover">
+											<img src="img/cover/music6.jpg" alt="music cover">
+										</a>
+										<audio controls>
+											<source src="music/Yellow Claw, Yade Lauren - Love & War {Grant Gibbs Bootleg}.wav" type="audio/mpeg">
+  										</audio>
+										<h3 class="card__title"><a href="item2.html">Love & War</a></h3>
+										<div class="card__author card__author--verified">
+											<img src="img/avatars/avatar9.jpg" alt="">
+											<p style="color: white;">@Yade Lauren</p>
+										</div>
+										<div class="card__info">
+											<div class="card__price">
+												<span>Buy Now</span>
+												<span>0.99 ETH</span>
+											</div>
+
+											<button class="card__likes" type="button">
+												<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+													<path
+														d="M20.16,5A6.29,6.29,0,0,0,12,4.36a6.27,6.27,0,0,0-8.16,9.48l6.21,6.22a2.78,2.78,0,0,0,3.9,0l6.21-6.22A6.27,6.27,0,0,0,20.16,5Zm-1.41,7.46-6.21,6.21a.76.76,0,0,1-1.08,0L5.25,12.43a4.29,4.29,0,0,1,0-6,4.27,4.27,0,0,1,6,0,1,1,0,0,0,1.42,0,4.27,4.27,0,0,1,6,0A4.29,4.29,0,0,1,18.75,12.43Z" />
+												</svg>
+												<span>358</span>
+											</button>
+										</div>
+									</div>
+									<!-- end card -->
+								</div>
+
+								<div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+									<!-- video card -->
+									<div class="card">
+										<a href="item2.html" class="card__cover card__cover--video">
+											<img src="img/cover/music7.jpg" alt="music cover">
+											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+												<path
+													d="M21.53,7.15a1,1,0,0,0-1,0L17,8.89A3,3,0,0,0,14,6H5A3,3,0,0,0,2,9v6a3,3,0,0,0,3,3h9a3,3,0,0,0,3-2.89l3.56,1.78A1,1,0,0,0,21,17a1,1,0,0,0,.53-.15A1,1,0,0,0,22,16V8A1,1,0,0,0,21.53,7.15ZM15,15a1,1,0,0,1-1,1H5a1,1,0,0,1-1-1V9A1,1,0,0,1,5,8h9a1,1,0,0,1,1,1Zm5-.62-3-1.5V11.12l3-1.5Z" />
+											</svg>
+										</a>
+										<audio controls>
+											<source src="music/Cloud – Limujii (No Copyright Music).mp3" type="audio/mpeg">
+  										</audio>
+										<h3 class="card__title"><a href="item2.html">Cloud</a></h3>
+										<div class="card__author">
+											<img src="img/avatars/avatar10.jpg" alt="">
+											<p style="color: white;"> @Limujii</p>
+										</div>
+										<div class="card__info">
+											<div class="card__price">
+												<span>Buy Now<</span>
+												<span>1.63 ETH</span>
+											</div>
+
+											<button class="card__likes" type="button">
+												<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+													<path
+														d="M20.16,5A6.29,6.29,0,0,0,12,4.36a6.27,6.27,0,0,0-8.16,9.48l6.21,6.22a2.78,2.78,0,0,0,3.9,0l6.21-6.22A6.27,6.27,0,0,0,20.16,5Zm-1.41,7.46-6.21,6.21a.76.76,0,0,1-1.08,0L5.25,12.43a4.29,4.29,0,0,1,0-6,4.27,4.27,0,0,1,6,0,1,1,0,0,0,1.42,0,4.27,4.27,0,0,1,6,0A4.29,4.29,0,0,1,18.75,12.43Z" />
+												</svg>
+												<span>90</span>
+											</button>
+										</div>
+									</div>
+									<!-- end video card -->
+								</div>
+
+								<div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+									<!-- card -->
+									<div class="card">
+										<a href="item2.html" class="card__cover">
+											<img src="img/cover/music8.jpg" alt="music cover">
+										</a>
+										<audio controls>
+											<source src="music/Summer Night – Aftertune (No Copyright Music).mp3" type="audio/mpeg">
+  										</audio>
+										<h3 class="card__title"><a href="item2.html">Summer Night</a></h3>
+										<div class="card__author">
+											<img src="img/avatars/avatar11.jpg" alt="">
+											<p style="color: white;"> @Aftertune/p>
+										</div>
+										<div class="card__info">
+											<div class="card__price">
+												<span>Buy Now</span>
+												<span>2.55 ETH</span>
+											</div>
+
+											<button class="card__likes" type="button">
+												<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+													<path
+														d="M20.16,5A6.29,6.29,0,0,0,12,4.36a6.27,6.27,0,0,0-8.16,9.48l6.21,6.22a2.78,2.78,0,0,0,3.9,0l6.21-6.22A6.27,6.27,0,0,0,20.16,5Zm-1.41,7.46-6.21,6.21a.76.76,0,0,1-1.08,0L5.25,12.43a4.29,4.29,0,0,1,0-6,4.27,4.27,0,0,1,6,0,1,1,0,0,0,1.42,0,4.27,4.27,0,0,1,6,0A4.29,4.29,0,0,1,18.75,12.43Z" />
+												</svg>
+												<span>64</span>
+											</button>
+										</div>
+									</div>
+									<!-- end card -->
+								</div>
+							</div>
+
+							<!-- paginator 
+							<div class="row row--grid">
+								<div class="col-12">
+									<div class="paginator">
+										<span class="paginator__pages">9 from 169</span>
+
+										<ul class="paginator__list">
+											<li>
+												<a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+														<path
+															d="M17,11H9.41l3.3-3.29a1,1,0,1,0-1.42-1.42l-5,5a1,1,0,0,0-.21.33,1,1,0,0,0,0,.76,1,1,0,0,0,.21.33l5,5a1,1,0,0,0,1.42,0,1,1,0,0,0,0-1.42L9.41,13H17a1,1,0,0,0,0-2Z" />
+													</svg></a>
+											</li>
+											<li class="active"><a href="#">1</a></li>
+											<li><a href="#">2</a></li>
+											<li><a href="#">3</a></li>
+											<li><a href="#">4</a></li>
+											<li>
+												<a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+														<path
+															d="M17.92,11.62a1,1,0,0,0-.21-.33l-5-5a1,1,0,0,0-1.42,1.42L14.59,11H7a1,1,0,0,0,0,2h7.59l-3.3,3.29a1,1,0,0,0,0,1.42,1,1,0,0,0,1.42,0l5-5a1,1,0,0,0,.21-.33A1,1,0,0,0,17.92,11.62Z" />
+													</svg></a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<!-- end paginator -->
+						</div>
+					</div>
+					<!-- end tabs content -->
+				</div>
+			</section>
+			<!-- end explore -->
+			<!--------------------------------------------------------------------------End of Explore Section Music (Tab4)----------------------------------------------------------------------------->
+
+
+	<!--Start of Get Started Section-->
+	<!----------------------------------------------------------Start Of Getting Started Home Page Section--------------------------------------------->
+	<!-- get started -->
+	<div class="row row--grid">
+		<!-- title -->
+		<div class="col-12">
+			<div class="main__title main__title--border-top">
+				<h2>Get started creating & selling your NFTs</h2>
+			</div>
+		</div>
+		<!-- end title -->
+
+		<div class="col-12 col-md-6 col-lg-4 col-xl-3">
+			<div class="feature">
+				<span class="feature__icon">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+						<path
+							d="M19,7H18V6a3,3,0,0,0-3-3H5A3,3,0,0,0,2,6H2V18a3,3,0,0,0,3,3H19a3,3,0,0,0,3-3V10A3,3,0,0,0,19,7ZM5,5H15a1,1,0,0,1,1,1V7H5A1,1,0,0,1,5,5ZM20,15H19a1,1,0,0,1,0-2h1Zm0-4H19a3,3,0,0,0,0,6h1v1a1,1,0,0,1-1,1H5a1,1,0,0,1-1-1V8.83A3,3,0,0,0,5,9H19a1,1,0,0,1,1,1Z" />
+					</svg>
+				</span>
+				<h3 class="feature__title">Set up your wallet</h3>
+				<p class="feature__text">Once you’ve set up your wallet of choice, connect it to NFT
+					marketplace by clicking this link. <br><a href="signin.html">Connect my
+						wallet</a>.</p>
+			</div>
+		</div>
+
+		<div class="col-12 col-md-6 col-lg-4 col-xl-3">
+			<div class="feature">
+				<span class="feature__icon feature__icon--green">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+						<path
+							d="M10,13H4a1,1,0,0,0-1,1v6a1,1,0,0,0,1,1h6a1,1,0,0,0,1-1V14A1,1,0,0,0,10,13ZM9,19H5V15H9ZM20,3H14a1,1,0,0,0-1,1v6a1,1,0,0,0,1,1h6a1,1,0,0,0,1-1V4A1,1,0,0,0,20,3ZM19,9H15V5h4Zm1,7H18V14a1,1,0,0,0-2,0v2H14a1,1,0,0,0,0,2h2v2a1,1,0,0,0,2,0V18h2a1,1,0,0,0,0-2ZM10,3H4A1,1,0,0,0,3,4v6a1,1,0,0,0,1,1h6a1,1,0,0,0,1-1V4A1,1,0,0,0,10,3ZM9,9H5V5H9Z" />
+					</svg>
+				</span>
+				<h3 class="feature__title">Create your collection</h3>
+				<p class="feature__text">Click Collection and set up your collection. Add social links, profile & banner images, and set a secondary sales fee.</p>
+			</div>
+		</div>
+
+		<div class="col-12 col-md-6 col-lg-4 col-xl-3">
+			<div class="feature">
+				<span class="feature__icon feature__icon--purple">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+						<path
+							d="M22.71,6.29a1,1,0,0,0-1.42,0L20,7.59V2a1,1,0,0,0-2,0V7.59l-1.29-1.3a1,1,0,0,0-1.42,1.42l3,3a1,1,0,0,0,.33.21.94.94,0,0,0,.76,0,1,1,0,0,0,.33-.21l3-3A1,1,0,0,0,22.71,6.29ZM19,13a1,1,0,0,0-1,1v.38L16.52,12.9a2.79,2.79,0,0,0-3.93,0l-.7.7L9.41,11.12a2.85,2.85,0,0,0-3.93,0L4,12.6V7A1,1,0,0,1,5,6h8a1,1,0,0,0,0-2H5A3,3,0,0,0,2,7V19a3,3,0,0,0,3,3H17a3,3,0,0,0,3-3V14A1,1,0,0,0,19,13ZM5,20a1,1,0,0,1-1-1V15.43l2.9-2.9a.79.79,0,0,1,1.09,0l3.17,3.17,0,0L15.46,20Zm13-1a.89.89,0,0,1-.18.53L13.31,15l.7-.7a.77.77,0,0,1,1.1,0L18,17.21Z" />
+					</svg>
+				</span>
+				<h3 class="feature__title">Add your NFTs</h3>
+				<p class="feature__text">Upload your work (music, books, art), add a title and description, and customize your NFTs with properties, and unlockable content.</p>
+			</div>
+		</div>
+
+		<div class="col-12 col-md-6 col-lg-4 col-xl-3">
+			<div class="feature feature--last">
+				<span class="feature__icon feature__icon--red">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+						<path
+							d="M15,12a1,1,0,1,0,1-1A1,1,0,0,0,15,12Zm6.71-.71-5-5A1,1,0,0,0,16,6H5A3,3,0,0,0,2,9v6a3,3,0,0,0,3,3H16a1,1,0,0,0,.71-.29l5-5A1,1,0,0,0,21.71,11.29ZM15.59,16H5a1,1,0,0,1-1-1V9A1,1,0,0,1,5,8H15.59l4,4Z" />
+					</svg>
+				</span>
+				<h3 class="feature__title">List them for sale</h3>
+				<p class="feature__text">Choose fixed-price, and we help you sell them!</p>
+			</div>
+		</div>
+	</div>
+	<!-- end get started -->
+	<!---------------------------------------------------End Of Getting of Started Home Page Section------------------------------------------------------->
+
+
+
+			<!-- end new authors -->
+		</div>
+	</main>
+	<!-- end main content -->
+	<!--------------------------------------------------------------------------End of Explore Section----------------------------------------------------------------------------->
+
+
+
+
+	<!--------------------------------------------------------------------Footer Starts----------------------------------------------------------------------------->
+	<!-- footer -->
+	<!--Navigation bar-->
+<div id="footer-placeholder">
+
+</div>
+<script>
+$(function(){
+  $("#footer-placeholder").load("footer.html");
+});
+</script>
+<!--end of Navigation bar-->
+
+	<!-- end footer -->
+	<!----------------------------------------------------------------Footer Ends------------------------------------------------------------------------->
+
+	
+
+	<!-- JS -->
+	<script type="text/javascript" src="main_test.js"></script>
+	<script type="text/babel" src="components/ProfileButton.js"></script>
+	<script type="text/babel" src="components/ConnectWallet.js"></script>
+
+	<script type="text/babel"> ReactDOM.render(<ConnectWallet userStatus={login}/>, document.querySelector("#Connect_wallet"))</script>
+	<script src="abi.js"></script>
+	<script src="js/jquery-3.5.1.min.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/select2.min.js"></script>
+	<script src="js/smooth-scrollbar.js"></script>
+	<script src="js/jquery.countdown.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>
