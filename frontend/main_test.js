@@ -88,6 +88,55 @@ async function saveUserInfo() {
 
 }
 
+async function createItems() {
+  const createItemFile = document.getElementById("sign__file-upload");
+  const createItemNameField = document.getElementById("itemname");
+  const createItemDesciptionField = document.getElementById("description");
+
+
+  if (createItemFile.files.lenght ==0){
+    alert("Please select a file!");
+    return;
+  }else if (createItemNameField.value.lenght == 0){
+    alert("Please give the item a name!");
+    return;
+  }
+
+  const nftFile = new Moralis.File('nftFile.jpg', createItemFile.files[0]);
+  await nftFile.saveIPFS();
+
+  const nftFilepath = nftFile.ipfs();
+  const nftFileHash = nftFile.hash();
+
+  const metadata = {
+    name: createItemNameField.value,
+    description: createItemDesciptionField.value,
+    nftFilepath: nftFilepath,
+    nftFileHash: nftFileHash
+  };
+
+  const nftFileMetadataFile = new Moralis.File("metadata.json", {base64 : btoa(JSON.stringify(metadata))});
+  await nftFileMetadataFile.saveIPFS();
+
+  const nftFileMetadataFilePath = nftFileMetadataFile.ipfs();
+  const nftFileMetadataFileHash = nftFileMetadataFile.hash();
+
+  const Item = Moralis.Object.extend("Item");
+
+  // Create a new instance of that class.
+  const item = new Item();
+  item.set('name', createItemNameField.value);
+  item.set('description', createItemDesciptionField.value);
+  item.set('nftFilepath', nftFilepath);
+  item.set('nftFileHash', nftFileHash);
+  item.set('metadataFilePath', nftFileMetadataFilePath);
+  item.set('metadataFileHash', nftFileMetadataFileHash);
+  await item.save();
+  console.log('this is the item', item);
+
+}
+
+
 // userInfo
 
 // mintNFT = async (metadataUrl) => {
@@ -99,6 +148,16 @@ async function saveUserInfo() {
 
 // document.getElementById("wallet_connect").onclick = login;
 // document.getElementById("btnUserInfo").onclick = logOut;
-// const userUsernameField = document.getElementById("txtUsername");
+const createItemForm = document.getElementById("createItem");
+
+// const createItemNameField = document.getElementById("itemname");
+// const createItemDesciptionField = document.getElementById("description");
+const createItemPriceField = document.getElementById("price");
+const createItemStatusField = document.getElementById("selectCreateItemStatus");
+// const createItemFile = document.getElementById("sign__file-upload");
+
+
+
+
 // const userEmailField = document.getElementById("txtEmail");
 
