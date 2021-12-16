@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+	<link rel="stylesheet" href="css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="css/select2.min.css">
+	<link rel="stylesheet" href="css/main.css">
+
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<!-- Favicons -->
+	<link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+	<link rel="icon" type="image/png" href="icon/favicon-32x32.png" sizes="32x32">
+	<link rel="apple-touch-icon" href="icon/apple-touch-icon.png" sizes="180x180">
+	<link rel="manifest" href="icon/site.webmanifest">
+
+	<meta name="description" content="Marope NFT Marketplace">
+	<meta name="keywords" content="Marope Marketplace NFT">
+	<meta name="author" content="Marope Inc">
+	<title>Marope – NFT Marketplace</title>
+
+	<script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <script src="https://unpkg.com/moralis/dist/moralis.js"></script>
+
+</head>
+
+<body>
+	<!----------------------------------------------------------------Start of Home Page Nav Bar--------------------------------------------------------------------------------->
+	<!-- header -->
+	   <!--Navigation bar-->
+<div id="nav-placeholder">
+
+</div>
+<script>
+$(function(){
+  $("#nav-placeholder").load("navigation.html");
+});
+</script>
+<!--end of Navigation bar-->
+
+	<!-- end header -->
+	<!---------------------------------------------------------------------End of Home Page Nav Bar------------------------------------------------------------------------>
+
+
+<!-- main content -->
+<main class="main">
+	<div class="main__author" data-bg="img/home/slide2.jpg"></div>
+	<div class="container">
+		<div class="row row--grid">
+			
+			<div class="col-12 col-xl-9">
+				<!-- title -->
+				<div class="main__title main__title--create">
+					<h2>Create collectible item</h2>
+				</div>
+				<!-- end title -->
+
+				<!-- create form -->
+				<form action="#" class="sign__form sign__form--create" id="createItem" >
+					<div class="row">
+						<div class="col-12">
+							<h4 class="sign__title">Upload file</h4>
+						</div>
+
+						<div class="col-12">
+							<div class="sign__file">
+								<label id="file1" for="sign__file-upload">e. g. Image, Audio, File</label>
+								<input data-name="#file1" id="sign__file-upload" name="file" class="sign__file-upload" type="file" accept="video/mp4,video/x-m4v,video/*,.png,.jpg,.jpeg">
+							</div>
+						</div>
+
+						<div class="col-12">
+							<h4 class="sign__title">Item details</h4>
+						</div>
+
+						<div class="col-12">
+							<div class="sign__group">
+								<label class="sign__label" for="itemname">Item name</label>
+								<input id="itemname" type="text" name="itemname" class="sign__input" placeholder="e. g. 'Bubble'">
+							</div>
+						</div>
+
+						<div class="col-12">
+							<div class="sign__group">
+								<label class="sign__label" for="description">Description</label>
+								<textarea id="description" name="description" class="sign__textarea" placeholder="e. g. 'Big bubble...'"></textarea>
+							</div>
+						</div>
+
+						<div class="col-12">
+							<div class="sign__group">
+								<label class="sign__title" for="number">Price</label>
+								<input id="price" type="number" name="size" class="sign__input" placeholder="e. g. Price">
+							</br>
+							</div>
+						</div>
+						
+						<div class="col-12">
+							<div class="sign__group sign__group--row">
+								<ul class="sign__radio sign__radio--single" id="selectCreateItemStatus">
+									<li>
+										<input id="type1" type="radio" name="type" checked="">
+										<label for="type1">Not for sale</label>
+									</li>
+									<li>
+										<input id="type2" type="radio" name="type">
+										<label for="type2">Instant buy</label>
+									</li>
+									<li>
+										<input id="type3" type="radio" name="type">
+										<label for="type3">Accept Offers</label>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+
+						<div class="col-12 col-xl-3">
+							<button id="btnCreateItem" type="button" class="sign__btn" onclick="createItems()">Create item</button>
+						</div>
+					</div>
+				</form>
+				<!-- end create form -->
+			</div>
+		</div>
+	</div>
+</main>
+<!-- end main content -->
+
+
+	<!--------------------------------------------------------------------Footer Starts----------------------------------------------------------------------------->
+	<!-- footer -->
+	   <!--Footer bar-->
+<div id="footer-placeholder">
+
+</div>
+<script>
+$(function(){
+  $("#footer-placeholder").load("footer.html");
+});
+</script>
+<!--end of Footer bar-->
+
+	<!-- end footer -->
+	<!----------------------------------------------------------------Footer Ends------------------------------------------------------------------------->
+
+
+	<!-- JS -->
+	<script src="js/jquery-3.5.1.min.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/select2.min.js"></script>
+	<script src="js/smooth-scrollbar.js"></script>
+	<script src="js/jquery.countdown.min.js"></script>
+	<script src="js/main.js"></script>
+	<script type="text/javascript" src="main_test.js"></script>
+</body>
+</html>
