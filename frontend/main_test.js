@@ -1,7 +1,7 @@
 /* Moralis init code */
 const serverUrl = "https://cfcle0kimiqg.usemoralis.com:2053/server";
 const appId = "Swj06DPVbh2uaZuBKnMSk7C0zkCMdx1XnEY0SIVY";
-const TOKEN_CONTRACT_ADDRESS = "0x4a2c549180cF41A5bCd73779De12E5FC9218A298"
+const TOKEN_CONTRACT_ADDRESS = "0x564548292fFedb974Ac5681C724665Fb9d3669e9"
 Moralis.start({ serverUrl, appId });
 const tokenContract = new web3.eth.Contract(tokenContractAbi, TOKEN_CONTRACT_ADDRESS);
 
