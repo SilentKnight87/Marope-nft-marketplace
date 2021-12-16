@@ -22,6 +22,6 @@ class ConnectWallet extends React.Component {
         )
     }
 }
-console.log('this is user',login.user);
+// console.log('this is user',login.user);
 
 
