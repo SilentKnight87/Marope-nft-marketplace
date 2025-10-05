@@ -94,10 +94,10 @@ async function createItems() {
   const createItemDesciptionField = document.getElementById("description");
 
 
-  if (createItemFile.files.lenght ==0){
+  if (createItemFile.files.length === 0){
     alert("Please select a file!");
     return;
-  }else if (createItemNameField.value.lenght == 0){
+  }else if (createItemNameField.value.length === 0){
     alert("Please give the item a name!");
     return;
   }
@@ -142,7 +142,7 @@ async function createItems() {
 // mintNFT = async (metadataUrl) => {
 //   const receipt = await tokenContract.methods.createItem(metadataUrl).send({from: ethereum.selectedAddress})
 // console.log(receipt);
-// return receipt.events.Trancfer.returnValues.tokenId;
+// return receipt.events.Transfer.returnValues.tokenId;
 // }
 
 
